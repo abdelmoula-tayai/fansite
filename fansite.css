@@ -1,0 +1,365 @@
+@font-face {
+    font-family: "refinery 25";
+    src: url(fonts/refinery-25-bold.ttf);
+}
+
+@font-face {
+    font-family: "blender pro";
+    src: url(fonts/BlenderPro-Bold.ttf);
+}
+
+body{
+    color: rgb(255, 230, 0);
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    font-family: "blender pro";
+    position: relative;
+}
+
+h1, h2, h3{
+    font-family: "refinery 25";
+}
+
+
+.home-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.back-vid{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    
+}
+
+@media( min-aspect-ratio: 16/9){
+    .back-vid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media( max-aspect-ratio: 16/9){
+    .back-vid{
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+
+nav li{
+    margin: 10px 70px;
+    font-size: 20px;
+}
+
+nav img{
+    width: 95%;
+    height: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 230, 0);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+nav a:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: underline rgba(255, 230, 0, 0.8);
+}
+
+@media (max-width: 730px){
+    nav li{
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+
+}
+
+    @media (max-width: 420px){
+        nav li{
+            margin: 10px 10px;
+            font-size: 15px;
+        }
+}
+
+/** css de la page histoire**/
+
+.histoire-body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 230, 0);
+}
+
+
+.histoire-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.726) 0%, rgba(0,0,0,0.5691526610644257) 22%, rgba(0, 0, 0, 0) 100%)
+    
+}
+
+
+footer .histoire-nav{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.726) 0%, rgba(0,0,0,0.5691526610644257) 22%, rgba(0, 0, 0, 0) 100%)
+    
+}
+
+footer .histoire-nav img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.histoire-nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.histoire-nav  img{
+    width: 15%;
+    
+}
+
+.histoire-main h1{
+    font-size: 60px;
+}
+
+.histoire-article{
+    display: flex;
+    align-items: center;
+}
+
+.histoire-article img{
+    width: 40%;
+    border-radius: 5px;
+    margin: 30px 120px 10px 50PX;
+}
+
+.histoire-article p{
+    font-size: 20px;
+    width: 90%;
+}
+
+
+.histoire-article h2{
+    display: block;
+    font-size: 40px;
+}
+
+.histoire-main :nth-child(3){
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.histoire-main :nth-child(3) img{
+    margin: 30px 50px 10px 120PX;
+}
+
+.histoire-main :nth-child(3) div{
+    margin-left: 30px;
+}
+
+.histoire-main :nth-child(5){
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.histoire-main :nth-child(5) img{
+    margin: 30px 50px 10px 120PX;
+}
+
+.histoire-main :nth-child(5) div{
+    margin-left: 30px;
+}
+
+@media (max-width: 950px){
+    
+    .histoire-article p{
+        font-size: 15px;
+        width: 100%; 
+    }
+
+    .histoire-article img{
+        min-width: 40%;
+        margin: 30px 50px 10px 20PX;
+    }
+
+    .histoire-main :nth-child(3) img{
+        margin: 30px 20px 10px 50PX;
+    }
+    
+    .histoire-main :nth-child(3) div{
+        margin-left: 20px;
+    }
+
+    .histoire-main :nth-child(3) p{
+        font-size: 15px;
+        width: 100%; 
+    }
+
+    @media (max-width: 750px){
+        .histoire-nav li{
+            margin: 10px 30px;
+            font-size: 15px;
+        }
+
+        .histoire-main h1{
+            font-size: 30px;
+        }
+
+        .histoire-article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .histoire-main :nth-child(3) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+        .histoire-main :nth-child(5) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+        .histoire-main :nth-child(5) img {
+            margin: 0;
+        }
+
+        .histoire-main img {
+            width: 90%;
+            margin: 0;
+        }
+    }
+
+    .histoire-container button{
+        margin: 0;
+    }
+
+    
+}
+
+@media (max-width: 568px){
+    .histoire-nav li{
+        margin: 10px 10px;
+        font-size: 10px;
+    }
+
+    .histoire-main h1{
+        font-size: 25px;
+    }
+
+    footer .histoire-nav img{
+        width: 40px;
+        height: 40px;
+        
+    }
+
+}
+
+/** css de la page actu**/
+
+
+.actu-container H2, p{
+    text-transform: uppercase;
+}
+
+
+/** css de la page contact**/
+
+.main-contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px 40%;
+    color: rgb(255, 230, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.main-contact > input, button, label{
+    border: none;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+button{
+    padding: 3px 50px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+@media (max-width: 1033px){
+    .main-contact{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+
+
+/** css de la page merch**/
+
+
+.histoire-container button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 230, 0);
+    padding: 20px;
+    margin-right: 50%;
+}
+
+.merch-article,a{
+    text-decoration: none;
+}
+
+
+@media (max-width: 750px){
+
+.histoire-container button{
+    margin: 0 0 10px 0;
+}
+
+}
